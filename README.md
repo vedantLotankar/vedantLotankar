@@ -1,131 +1,83 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/arcade-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/arcade-light.svg">
-  <img src="assets/arcade-light.svg" alt="Vedant Lotankar. Apps, automation, and experiments you can open up. An animated mechanical workshop connects a phone, diagnostic machine, and arcade cabinet." width="1200">
-</picture>
+<!-- Visual profile. Every linked panel opens its project. Text alternatives are included on each image. -->
 
-# Hey, I'm Vedant.
+<a href="https://github.com/vedantLotankar?tab=repositories">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/01-intro-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/01-intro-light.svg">
+    <img src="assets/01-intro-light.svg" alt="Vedant Lotankar. A visual atlas of apps, automation and machine-learning experiments. Five pair-built projects with Rishi Sangare and original solo builds." width="1000">
+  </picture>
+</a>
 
-I build apps and automation, and experiment with machine learning. This is my workbench. Pick something, open it up, and see what makes it tick.
+<a href="https://github.com/rishi-sangare/multi-account-game-automation">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/02-commander-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/02-commander-light.svg">
+    <img src="assets/02-commander-light.svg" alt="ProTanki Commander, pair-built with Rishi. Eight mock windows feed a capture, detect, click and verify loop, with retry and fallback input. The demo uses mock clients." width="1000">
+  </picture>
+</a>
 
-[Explore the builds](#pick-a-build) · [Try a debugging puzzle](#a-small-debugging-puzzle) · [Start a conversation](https://github.com/vedantLotankar/vedantLotankar/issues/new?title=Let%27s%20talk%20about%20a%20build)
+<a href="https://github.com/rishi-sangare/bolna-call-lab">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/03-call-lab-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/03-call-lab-light.svg">
+    <img src="assets/03-call-lab-light.svg" alt="Call Lab for Bolna, pair-built with Rishi. A Twilio-protocol caller feeds Bolna and a log analyzer. Five scenarios distinguish silence, TTS, STT, missing media and corrected configuration." width="1000">
+  </picture>
+</a>
 
-**A quick look inside:** [five call-failure scenarios](https://github.com/rishi-sangare/bolna-call-lab#what-it-does) · [an eight-client mock demo](https://github.com/rishi-sangare/multi-account-game-automation#the-mock-client) · [a Swift location engine with fault-injection tests](https://github.com/rishi-sangare/elsewhere#develop)
+<a href="https://github.com/vedantLotankar/ChefMate">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/04-chefmate-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/04-chefmate-light.svg">
+    <img src="assets/04-chefmate-light.svg" alt="ChefMate, a solo React Native and Express cooking assistant MVP. Schematic screens show recipe browsing and contextual chat. Some features are unfinished." width="1000">
+  </picture>
+</a>
 
-These describe repository contents and documented demos, rather than independently rerun benchmarks.
+<a href="https://github.com/rishi-sangare/wholesale-voice-desk">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/05-voice-desk-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/05-voice-desk-light.svg">
+    <img src="assets/05-voice-desk-light.svg" alt="Wholesale Voice Desk, pair-built with Rishi. Lead intake branches on duplicates, do-not-call, consent and calling hours, then routes call results into CRM and booking." width="1000">
+  </picture>
+</a>
 
-## Pick a build
+<a href="https://github.com/rishi-sangare/elsewhere">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/06-elsewhere-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/06-elsewhere-light.svg">
+    <img src="assets/06-elsewhere-light.svg" alt="Elsewhere, pair-built with Rishi. Route playback, a Swift session supervisor, simulator and device backends. The Simulator path is documented working; the real-device path needs testing." width="1000">
+  </picture>
+</a>
 
-### 01 / ChefMate
-**A cooking app with recipe discovery and contextual AI chat.**
+<a href="https://rishi-sangare.github.io/telegram-content-bot-demo/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/07-content-bot-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/07-content-bot-light.svg">
+    <img src="assets/07-content-bot-light.svg" alt="Telegram Content Bot, pair-built with Rishi in Make.com. Brief, approval, revision, Drive upload detection and Asana task workflow. Repository contains the demo page and video." width="1000">
+  </picture>
+</a>
 
-My solo project. React Native, Expo, TypeScript, Zustand, and an Express backend. The repository includes recipe and chat screens, server-side AI integration, and setup instructions. It's an MVP with dummy recipe data and unfinished features.
-
-[Open the repository →](https://github.com/vedantLotankar/ChefMate)
-
-<details>
-<summary>Open the cabinet: what to look for</summary>
-
-The mobile app and backend are separate. Start with `src/` for the app and `backend/` for the server. The [package manifest](https://github.com/vedantLotankar/ChefMate/blob/main/package.json) records the current app dependencies. Some README setup and version claims need updating.
-
-</details>
-
-### 02 / ProTanki Commander
-**One Windows app coordinating multiple game clients.**
-
-Pair-built with [Rishi Sangare](https://github.com/rishi-sangare): shared design, implementation, testing, and debugging. Python, Qt, and Win32. The repository documents per-account state machines, click verification, fallback input, and a demo using eight mock clients.
-
-[Repository](https://github.com/rishi-sangare/multi-account-game-automation) · [Recorded mock-client demo](https://github.com/rishi-sangare/multi-account-game-automation/blob/main/docs/media/demo.mp4)
-
-<details>
-<summary>Open the cabinet: what happens after a click?</summary>
-
-The engine checks whether the screen changed, retries missed input, and can switch from background messages to real mouse input. The bundled mock can deliberately reject background clicks. The demo uses this stand-in, so it shouldn't be read as a live-game benchmark.
-
-</details>
-
-### 03 / Call Lab for Bolna
-**Reproduce a dropped voice-agent call. Find the broken stage in the logs.**
-
-Pair-built with [Rishi Sangare](https://github.com/rishi-sangare): shared design, implementation, testing, and debugging. Python, WebSockets, Bolna, and Twilio Media Streams. Five documented scenarios distinguish silence timeouts, TTS configuration, STT rejection, missing audio, and a corrected configuration.
-
-[Repository](https://github.com/rishi-sangare/bolna-call-lab) · [Walkthrough page](https://rishi-sangare.github.io/bolna-call-lab/)
-
-<details>
-<summary>Open the cabinet: where is the evidence?</summary>
-
-`engine/` runs the Bolna engine. `lab/` simulates the caller. `doctor/analyze.py` reads engine logs and caller events to identify which stage failed. The useful distinction is the reason for the drop, not just the fact that the call stopped.
-
-</details>
-
-### 04 / Wholesale Voice Desk
-**A lead intake, qualification, and appointment-booking workflow.**
-
-Pair-built with [Rishi Sangare](https://github.com/rishi-sangare): shared design, implementation, testing, and debugging. Vapi, Make.com, Python, and Supabase. The README documents a demo that routes a qualified lead and books a walkthrough, plus duplicate, consent, opt-out, and calling-hours branches.
-
-[Repository](https://github.com/rishi-sangare/wholesale-voice-desk) · [Demo page](https://rishi-sangare.github.io/wholesale-voice-desk/)
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/09-challenge-dark.svg"><img src="assets/09-challenge-light.svg" alt="Diagnosis challenge: caller audio arrived and a transcript exists, but the agent voice never played. The TTS voice ID is not in the account. Expand a stage below to reveal the trace." width="1000"></picture>
 
 <details>
-<summary>Open the cabinet: follow the lead</summary>
-
-Intake → normalize and deduplicate → consent and calling-hours checks → call or human task → post-call routing. Start with `src/make/`, `src/vapi/`, and `src/supabase/`. These are implemented workflow branches; they aren't a claim of legal certification.
-
-</details>
-
-### 05 / Elsewhere
-**An experimental iPhone location-simulation app with route playback.**
-
-Pair-built with [Rishi Sangare](https://github.com/rishi-sangare): shared design, implementation, testing, and debugging. Swift, SwiftUI, and a Python simulator bridge. The README distinguishes the working Simulator path from the real-device path that still needs testers.
-
-[Repository](https://github.com/rishi-sangare/elsewhere) · [Test plan](https://github.com/rishi-sangare/elsewhere/blob/main/docs/TESTING.md)
-
-<details>
-<summary>Open the cabinet: how does it handle failure?</summary>
-
-The pure-Swift engine includes a session supervisor, route playback, and fault-injection tests. The documented design checks the reported location and alerts on exposure or connection failure. Real-device reliability remains an explicit testing limitation.
-
-</details>
-
-**Also on the bench:** [Telegram Content Bot](https://github.com/rishi-sangare/telegram-content-bot-demo), pair-built with Rishi using Make.com for briefs, approvals, Drive upload detection, and Asana tasks. That repository holds the demo page and video.
-
-## A small debugging puzzle
-
-*A voice-agent call ends after about 12 seconds. The log says `inactivity_timeout`. What would you inspect next?*
-
-<details>
-<summary>A / Assume the speech-to-text account ran out of credit</summary>
-
-Check the provider logs before deciding. In Call Lab's documented STT-rejection scenario, the termination reason is `transcriber_connection_error`. An inactivity timeout alone doesn't establish a billing problem.
-
+<summary>01 / Inspect speech-to-text</summary>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/answer-0-dark.svg"><img src="assets/answer-0-light.svg" alt="A transcript exists; inspect TTS next." width="1000"></picture>
 </details>
 
 <details>
-<summary>B / Check audio flow, TTS configuration, and the silence timeout</summary>
-
-That's the useful next step. Several different failures can end in inactivity: missing caller audio, a voice that never plays, or a healthy caller pausing longer than the configured timeout. Inspect each stage before changing settings.
-
-[Look at the five scenarios →](https://github.com/rishi-sangare/bolna-call-lab#what-it-does)
-
+<summary>02 / Inspect text-to-speech</summary>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/answer-1-dark.svg"><img src="assets/answer-1-light.svg" alt="The invalid voice ID prevents playback and leads to inactivity. Check the TTS configuration." width="1000"></picture>
 </details>
 
 <details>
-<summary>C / Increase every timeout and call it fixed</summary>
-
-That could hide a broken stage. Confirm that caller audio arrives and agent audio plays first. Call Lab includes a corrected configuration, but the right fix depends on what the logs show.
-
+<summary>03 / Increase the timeout</summary>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/answer-2-dark.svg"><img src="assets/answer-2-light.svg" alt="Increasing the timeout leaves playback broken. Check TTS configuration." width="1000"></picture>
 </details>
 
-## More experiments
-
-[Supervised learning](https://github.com/vedantLotankar/Supervised-Learning) · [Reinforcement learning](https://github.com/vedantLotankar/Reinforcement-Learning) · [Sign-language translation](https://github.com/vedantLotankar/WP_Project) · [Inventory management](https://github.com/vedantLotankar/Inventory_Management_System)
-
-These are my solo repositories. Their documentation and evaluation details are being reviewed.
-
-## Collaboration
-
-For the five projects with Rishi, we worked together throughout: brainstorming, prototyping, pair coding, testing, debugging, and improving the builds. The project descriptions above refer to our shared work.
-
-Want to discuss an implementation or build something together? [Open a profile issue](https://github.com/vedantLotankar/vedantLotankar/issues/new?title=Let%27s%20talk%20about%20a%20build).
-
-<sub>The workshop illustration is animated; the cabinets and puzzle use GitHub's expandable sections. Everything still reads with images or motion turned off.</sub>
+<a href="https://github.com/vedantLotankar/vedantLotankar/issues/new?title=Let%27s%20build%20something">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/08-experiments-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/08-experiments-light.svg">
+    <img src="assets/08-experiments-light.svg" alt="More solo experiments: supervised learning, reinforcement learning, sign-language translation and inventory management. Contact Vedant through a profile issue." width="1000">
+  </picture>
+</a>
 
