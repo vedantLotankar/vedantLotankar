@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">Vedant Lotankar's Debug Arcade</title><desc id="desc">A kinetic workshop: a marble travels through a phone, a diagnostic machine and an arcade cabinet. Explore the projects below.</desc>
+<style>
+text{font-family:Consolas,'Courier New',monospace;fill:#f4efdf}.small{font-size:15px;fill:#b2c1b8}.label{font-size:12px;letter-spacing:2px;fill:#b2c1b8}.wire{fill:none;stroke:#b7d89c;stroke-width:3;stroke-dasharray:5 8}.pulse{animation:pulse 3s ease-in-out infinite}.gear{transform-origin:603px 340px;animation:spin 18s linear infinite}.steam{animation:rise 4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes rise{50%{transform:translateY(-9px);opacity:.4}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}animateMotion{display:none}}
+</style>
+<rect width="1200" height="560" rx="22" fill="#141c23"/>
+<rect x="24" y="24" width="1152" height="512" rx="12" fill="none" stroke="#b2c1b8" opacity=".3"/>
+<text x="58" y="69" class="label">VL / INDEPENDENT BUILDS + COLLABORATIVE EXPERIMENTS</text>
+<circle cx="1125" cy="63" r="7" fill="#b7d89c" class="pulse"/>
+<text x="56" y="137" font-size="54" font-weight="bold" letter-spacing="-3">Vedant Lotankar</text>
+<text x="58" y="175" class="small">Apps, automation, and experiments you can open up.</text>
+<path d="M58 201H1140" stroke="#b2c1b8" opacity=".3"/>
+<text x="58" y="237" class="label">THE DEBUG ARCADE</text>
+<text x="1140" y="237" class="label" text-anchor="end">PICK A PROJECT. LOOK INSIDE.</text>
+<!-- Workbench, hand-drawn mechanical track -->
+<path d="M100 416H1105L1134 440H72Z" fill="#23312f" stroke="#b2c1b8"/>
+<path d="M104 441H1102V455H104Z" fill="#b2c1b8" opacity=".35"/>
+<path d="M126 455V487M1080 455V487" stroke="#b2c1b8" stroke-width="9"/>
+<path id="track" d="M150 376C195 376 200 280 265 280H405C467 280 458 395 518 395H681C750 395 735 284 796 284H1005" fill="none" stroke="#e67c49" stroke-width="5"/>
+<path d="M150 383C195 383 200 287 265 287H405C467 287 458 402 518 402H681C750 402 735 291 796 291H1005" fill="none" stroke="#b2c1b8" stroke-width="1" opacity=".5"/>
+<circle cx="150" cy="376" r="8" fill="#f4efdf"><animateMotion dur="9s" repeatCount="indefinite" path="M0 0C45 0 50 -96 115 -96H255C317 -96 308 19 368 19H531C600 19 585 -92 646 -92H855"/></circle>
+<!-- Phone station -->
+<path d="M238 401L258 378H354L374 401Z" fill="#b2c1b8" opacity=".4"/>
+<rect x="270" y="303" width="72" height="109" rx="13" fill="#f4efdf"/>
+<rect x="276" y="312" width="60" height="87" rx="8" fill="#23312f"/>
+<path d="M288 335H320M288 344H311M288 365H320M288 374H306" stroke="#e67c49" stroke-width="4"/>
+<circle cx="306" cy="405" r="2" fill="#141c23"/>
+<path d="M222 359Q207 345 222 331M213 368Q188 345 213 322" stroke="#b7d89c" stroke-width="3" fill="none" class="pulse"/>
+<!-- Diagnostic machine -->
+<rect x="493" y="297" width="186" height="93" rx="8" fill="#23312f" stroke="#b2c1b8" stroke-width="2"/>
+<rect x="508" y="309" width="103" height="46" rx="4" fill="#141c23"/>
+<path d="M516 337H535L542 322L551 345L558 329H601" class="wire"/>
+<circle cx="644" cy="323" r="9" fill="#e67c49" class="pulse"/>
+<path d="M627 350H660M627 359H660" stroke="#b2c1b8" stroke-width="2"/>
+<text x="510" y="376" font-size="11">TRACE / TEST / RETRY</text>
+<g class="gear" fill="#b7d89c"><path d="M595 319H611V361H595ZM582 332H624V348H582Z"/><circle cx="603" cy="340" r="17"/></g>
+<circle cx="603" cy="340" r="6" fill="#141c23"/>
+<!-- Arcade cabinet -->
+<path d="M837 413V300L853 267H949L969 301V413Z" fill="#f4efdf"/>
+<path d="M854 279H946V297H854Z" fill="#e67c49"/>
+<text x="900" y="292" text-anchor="middle" font-size="10" style="fill:#141c23">OPEN TO EXPLORE</text>
+<rect x="852" y="306" width="102" height="66" rx="3" fill="#141c23"/>
+<path d="M865 360L887 341L907 352L937 324" class="wire"/>
+<path d="M850 381H955L964 394H841Z" fill="#23312f"/>
+<circle cx="873" cy="384" r="5" fill="#e67c49"/><circle cx="932" cy="385" r="4" fill="#b7d89c"/>
+<rect x="888" y="402" width="30" height="4" fill="#b2c1b8"/>
+<text x="306" y="476" class="label" text-anchor="middle">BUILD</text>
+<text x="585" y="476" class="label" text-anchor="middle">BREAK / UNDERSTAND</text>
+<text x="902" y="476" class="label" text-anchor="middle">TRY AGAIN</text>
+<text x="58" y="515" class="small">06 projects to inspect below</text>
+<text x="1140" y="515" class="small" text-anchor="end">NO HIGH SCORE REQUIRED.</text>
+</svg>
